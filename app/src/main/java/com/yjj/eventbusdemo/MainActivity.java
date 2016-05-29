@@ -5,8 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
-import com.yj.eventbusdemo.R;
+import com.yjj.eventbusdemo.R;
 import com.yjj.eventbusex.EventBus;
 import com.yjj.eventbusex.meta.Subscriber;
 import com.yjj.eventbusex.meta.ThreadType;
@@ -163,8 +164,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Subscriber(threadType = ThreadType.MAIN)
     public void onEvent(MainEvent event) {
-
-        Log.d("yjj", "mytime=" + (System.currentTimeMillis() - startTime));
+        Toast.makeText(this,"the message is "+event.type,Toast.LENGTH_SHORT).show();
     }
 
 

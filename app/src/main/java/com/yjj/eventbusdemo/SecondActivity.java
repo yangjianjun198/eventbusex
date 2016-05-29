@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-import com.yj.eventbusdemo.R;
+import com.yjj.eventbusdemo.R;
 import com.yjj.eventbusex.EventBus;
 import com.yjj.eventbusex.meta.Subscriber;
 import com.yjj.eventbusex.meta.ThreadType;

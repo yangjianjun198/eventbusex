@@ -8,6 +8,6 @@ public class MainEvent {
     public String type;
 
     public MainEvent(){
-        type="aaa";
+        type="mainEvent";
     }
 }
